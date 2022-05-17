@@ -4,7 +4,10 @@ import logo from '../logo.svg';
 const NavBar = () => {
 return (
   <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
-  <a class="navbar-brand" href="#"><h1>Vildhjarta</h1>      <img src={logo} className="App-logo" alt="logo" /> <h6>Instrumentos Musicales</h6> <h6>Audio Profesional</h6></a>
+       <img src="guitarlogo.png" alt="logo guitarra" class="logoGuitarra" />
+    <a class="navbar-brand" href="#"><h1>Vildhjarta</h1>
+ 
+        <h6>Instrumentos Musicales</h6> <h6>Audio Profesional</h6></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
