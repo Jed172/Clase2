@@ -1,10 +1,10 @@
 import './NavBar.css'
-import logo from '../logo.svg';
+import CartWidget from '../CartWidget/CartWidget'
 
 const NavBar = () => {
 return (
   <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
-       <img src="guitarlogo.png" alt="logo guitarra" class="logoGuitarra" />
+       <img src="images/guitarlogo.png" alt="logo guitarra" class="logoGuitarra" />
     <a class="navbar-brand" href="#"><h1>Vildhjarta</h1>
  
         <h6>Instrumentos Musicales</h6> <h6>Audio Profesional</h6></a>
@@ -33,6 +33,7 @@ return (
         </div>
       </li>
     </ul>
+    <CartWidget/>
     <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="search" placeholder=" " aria-label="Search"/>
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
