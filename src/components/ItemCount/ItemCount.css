@@ -1,0 +1,11 @@
+.plantilla{
+    display: list-item;
+    place-content: center;
+}
+.counter
+{
+    padding:1em;
+}
+.stock{
+padding: 1em;
+}

@@ -1,6 +1,6 @@
 import './NavBar.css'
 import CartWidget from '../CartWidget/CartWidget'
-
+import React from "react"
 const NavBar = () => {
 return (
   <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
