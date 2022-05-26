@@ -41,12 +41,12 @@ const increment = () => {
         <div class="plantilla">
         <h6>Cantidad Seleccionada:</h6>
         <section class="counter">
-        <h1>{count}</h1>
+        <h6>{count}</h6>
         <button onClick={decrement}> -</button> 
         <button onClick={increment}>+</button>
         </section>
         <button class="addCarrito" onClick={onAdd}>Agregar al Carrito</button>
-        <h1 class="stock"> Stock Disponible: {stock}</h1>
+        <h6 class="stock"> Stock Disponible: {stock}</h6>
         <button onClick={reset}> reset</button> 
         </div>
         

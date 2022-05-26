@@ -1,10 +1,30 @@
 import React from "react"
-import ItemCount from "../ItemCount/ItemCount"
+import { useState,useEffect } from 'react'
+import { getProducts } from '../../asynmock'
+import ItemList from "../ItemList/ItemList"
 
-const ItemListContainer = (props) => {
 
-    return <div><h1>{props.greeting}</h1></div>
+const ItemListContainer = ({ greeting }) => {
+    const [products, setProducts] =useState ([])
+
+    useEffect(() => {
+        getProducts().then(response => {
+            setProducts(response)
+        })
+    },[])
     
+    console.log('antes de montar')
+
+    // const newProduct = products.map(product => <p>{product.name}</p>)
+    // console.log(newProduct)
+
+    return(
+         <div className='ItemListContainer'>
+             <h1>{greeting}</h1>
+             {/* products.map(product=> <p>{product.name}</p>)*/}
+             <ItemList products={products}/>
+             </div>
+    )
 }
 
 export default ItemListContainer
